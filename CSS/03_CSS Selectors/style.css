@@ -1,0 +1,83 @@
+/* Universal Selector  ( * )  */  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Type Selector  ( element- p h1 etc. )  */
+
+p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Class Selector  ( .className )  */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* ID Selector  ( #idName )  */
+#header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Attribute Selector  ( [attribute="value"] )  */
+
+input[type="text"] {
+    border: 2px solid #ccc;
+    padding: 5px;
+}
+
+/* Descendant Selector  ( parent child )  */
+article p {
+    font-style: italic;
+    background-color: rgb(52, 84, 112);
+    color: rgb(255, 172, 7);
+    padding: 5px;
+}
+
+/* Child Selector  ( parent > child )  */
+ul > li {
+    list-style-type: square;
+    background-color: bisque;
+    margin-left: 20px;
+}
+
+/* Adjacent Sibling Selector  ( element1 + element2 )  */
+h2 + p {
+    color: blue;
+    font-size: 18px;
+}
+
+/* General Sibling Selector  ( element1 ~ element2 )  */
+h3 ~ p {
+    color: green;
+    font-size: 14px;
+}
+
+/* Pseudo-class Selector  ( element:pseudo-class )  */
+a:hover {
+    background-color: rgb(173, 15, 42);
+    color: rgb(245, 255, 255);
+    padding: 5px;
+    margin: 4px;
+    text-decoration: none;
+}
+
+/* Pseudo-element Selector  ( element::pseudo-element )  */
+p::first-letter {
+   font-weight: bold;
+   font-size: 30px;
+}
+
+/* Grouping Selector  ( element1, element2, .className )  */
+h1, h2, .h3 {
+    text-align: center;
+    color: darkslategray;
+}
