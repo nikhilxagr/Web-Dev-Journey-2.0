@@ -76,3 +76,103 @@ h2 {
 .nav1 .login-btn:hover {
     background-color: rgb(255, 127, 41);
 }
+
+.nav2 {
+    background-color: rgb(218, 208, 81);
+    padding: 15px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.nav2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav2 li {
+    margin-bottom: 12px;
+
+}
+
+.nav2 a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+    border-radius: 3px;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav2 a:hover {
+    background-color: rgb(197, 127, 41);
+    color: white;
+}
+
+.nav2 .login-btn {
+    background-color: rgb(41, 38, 38);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+.nav2 .login-btn:hover {
+    background-color: rgb(23, 40, 173);
+    border: 2px solid white;
+}
+
+.nav3 {
+    background-color: rgb(25, 157, 137);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.nav3 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav3 a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+.nav3 .dropdown-content {
+    display: none;
+    background-color: rgb(25, 157, 137);
+}
+
+.nav3 .dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+ 
+}
+
+.nav3 .login-btn {
+    background-color: rgb(41, 38, 38);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.nav3 .login-btn:hover {
+    background-color: rgb(23, 40, 173);
+    border: 2px solid white;
+}
