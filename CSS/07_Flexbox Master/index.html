@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Demo</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f7f7f7;
+        }
+
+        /* Generic Box Style */
+        .box {
+            border: 2px solid #333;
+            padding: 10px;
+            margin-bottom: 25px;
+            background: white;
+        }
+
+        .container {
+            background: #e9e9e9;
+            padding: 10px;
+            border: 2px dashed #555;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #4CAF50;
+            padding: 10px;
+            margin: 5px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Colored items for clarity */
+        .item:nth-child(2) {
+            background: #2196F3;
+        }
+
+        .item:nth-child(3) {
+            background: #FF5722;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Flexbox Property Examples</h1>
+
+    <!-- DISPLAY: FLEX -->
+    <div class="box">
+        <h2>1. display: flex</h2>
+        <div class="container" style="display:flex;">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+    </div>
+
+    <!-- FLEX DIRECTION -->
+    <div class="box">
+        <h2>2. flex-direction</h2>
+
+        <p>Row (default)</p>
+        <div class="container" style="display:flex; flex-direction: row;">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+
+        <p>Column</p>
+        <div class="container" style="display:flex; flex-direction: column;">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+    </div>
+
+    <!-- FLEX WRAP -->
+    <div class="box">
+        <h2>3. flex-wrap</h2>
+        <div class="container" style="display:flex; flex-wrap: wrap; width: 200px;">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+        </div>
+    </div>
+
+    <!-- FLEX FLOW -->
+    <div class="box">
+        <h2>4. flex-flow (direction + wrap)</h2>
+        <div class="container" style="display:flex; flex-flow: row wrap; width: 200px;">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+        </div>
+    </div>
+
+    <!-- JUSTIFY CONTENT -->
+    <div class="box">
+        <h2>5. justify-content</h2>
+        <div class="container" style="display:flex; justify-content: space-between;">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+    </div>
+
+    <!-- ALIGN ITEMS -->
+    <div class="box">
+        <h2>6. align-items</h2>
+        <div class="container" style="display:flex; height: 100px; align-items: center;">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+    </div>
+
+    <!-- ALIGN CONTENT -->
+    <div class="box">
+        <h2>7. align-content</h2>
+        <div class="container" style="display:flex; flex-wrap:wrap; align-content:space-between; height:150px;">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+        </div>
+    </div>
+
+    <!-- GAP -->
+    <div class="box">
+        <h2>8. gap / row-gap / column-gap</h2>
+        <div class="container" style="display:flex; gap:15px;">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+    </div>
+
+    <!-- ORDER -->
+    <div class="box">
+        <h2>9. order</h2>
+        <div class="container" style="display:flex;">
+            <div class="item" style="order:3;">A (3)</div>
+            <div class="item" style="order:1;">B (1)</div>
+            <div class="item" style="order:2;">C (2)</div>
+        </div>
+    </div>
+
+    <!-- FLEX GROW -->
+    <div class="box">
+        <h2>10. flex-grow</h2>
+        <div class="container" style="display:flex;">
+            <div class="item" style="flex-grow:1;">Grow 1</div>
+            <div class="item" style="flex-grow:2;">Grow 2</div>
+            <div class="item">No Grow</div>
+        </div>
+    </div>
+
+    <!-- FLEX SHRINK -->
+    <div class="box">
+        <h2>11. flex-shrink</h2>
+        <div class="container" style="display:flex; width:300px;">
+            <div class="item" style="flex-shrink:0; width:200px;">No Shrink</div>
+            <div class="item" style="width:200px;">Shrink</div>
+        </div>
+    </div>
+
+    <!-- FLEX BASIS -->
+    <div class="box">
+        <h2>12. flex-basis</h2>
+        <div class="container" style="display:flex;">
+            <div class="item" style="flex-basis:150px;">150px</div>
+            <div class="item" style="flex-basis:100px;">100px</div>
+            <div class="item">Auto</div>
+        </div>
+    </div>
+
+    <!-- FLEX SHORTHAND -->
+    <div class="box">
+        <h2>13. flex (grow, shrink, basis)</h2>
+        <div class="container" style="display:flex;">
+            <div class="item" style="flex:1;">flex:1</div>
+            <div class="item" style="flex:2;">flex:2</div>
+            <div class="item" style="flex:0 0 80px;">0 0 80px</div>
+        </div>
+    </div>
+
+    <!-- ALIGN SELF -->
+    <div class="box">
+        <h2>14. align-self</h2>
+        <div class="container" style="display:flex; height:100px; align-items:flex-start;">
+            <div class="item">A</div>
+            <div class="item" style="align-self:center;">B (center)</div>
+            <div class="item" style="align-self:flex-end;">C (flex-end)</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
