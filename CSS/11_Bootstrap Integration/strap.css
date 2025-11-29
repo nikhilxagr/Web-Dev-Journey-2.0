@@ -1,0 +1,13 @@
+
+body {
+    background-color: #c7c0c0;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #998b8b;
+}
