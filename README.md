@@ -1,51 +1,86 @@
 <div align="center">
 
-<svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
+
+<svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); border-radius: 15px; padding: 20px; box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);">
   <defs>
     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1">
-        <animate attributeName="stop-color" values="#667eea;#764ba2;#f093fb;#667eea" dur="4s" repeatCount="indefinite"/>
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1">
+        <animate attributeName="stop-color" values="#ffffff;#fff9e6;#ffe6f0;#ffffff" dur="5s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1">
-        <animate attributeName="stop-color" values="#764ba2;#f093fb;#667eea;#764ba2" dur="4s" repeatCount="indefinite"/>
+      <stop offset="50%" style="stop-color:#fff9e6;stop-opacity:1">
+        <animate attributeName="stop-color" values="#fff9e6;#ffe6f0;#ffffff;#fff9e6" dur="5s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1">
-        <animate attributeName="stop-color" values="#f093fb;#667eea;#764ba2;#f093fb" dur="4s" repeatCount="indefinite"/>
+      <stop offset="100%" style="stop-color:#ffe6f0;stop-opacity:1">
+        <animate attributeName="stop-color" values="#ffe6f0;#ffffff;#fff9e6;#ffe6f0" dur="5s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
   </defs>
-  <text x="50%" y="50%" text-anchor="middle" font-size="48" font-weight="bold" fill="url(#gradient)" font-family="Arial, sans-serif">
-    🚀 Web Dev Journey 2.0
+  <text x="50%" y="40%" text-anchor="middle" font-size="56" font-weight="bold" fill="url(#gradient)" font-family="Arial, sans-serif" filter="url(#glow) url(#shadow)">
+    🚀 Web Dev Journey
+  </text>
+  <text x="50%" y="65%" text-anchor="middle" font-size="20" fill="#ffffff" font-family="Arial, sans-serif" opacity="0.95" font-weight="500">
+    Full Stack Development Journey
   </text>
 </svg>
 
-### Your Complete Web Development Learning Path
+<br/>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/nikhilxagr/Web-Dev-Journey-2.0?style=for-the-badge&color=667eea)
-![GitHub stars](https://img.shields.io/github/stars/nikhilxagr/Web-Dev-Journey-2.0?style=for-the-badge&color=764ba2)
-![GitHub forks](https://img.shields.io/github/forks/nikhilxagr/Web-Dev-Journey-2.0?style=for-the-badge&color=667eea)
-![GitHub issues](https://img.shields.io/github/issues/nikhilxagr/Web-Dev-Journey-2.0?style=for-the-badge&color=764ba2)
-![GitHub license](https://img.shields.io/github/license/nikhilxagr/Web-Dev-Journey-2.0?style=for-the-badge&color=667eea)
+<div style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); padding: 25px; border-radius: 15px; margin: 20px 0; border: 2px solid #667eea30; backdrop-filter: blur(10px);">
+
+### 🎓 Course by **Hitesh Chaudhary** | 📚 Source: **Udemy**
+
+<p align="center">
+  <em style="color: #667eea; font-size: 16px;">Your complete guide to mastering the MERN Stack with hands-on projects and real-world applications</em>
+</p>
+
+</div>
+
+<br/>
+
+<br/>
+
+> 💡 **Learning from the best!** This repository contains code, notes, and projects from Hitesh Chaudhary's MERN Stack course on Udemy.
 
 </div>
 
 ---
 
+<div style="background: linear-gradient(135deg, #667eea08 0%, #764ba208 100%); padding: 30px; border-radius: 15px; margin: 20px 0;">
+
 ## 📚 About This Repository
 
-Welcome to **Web Dev Journey 2.0**! This repository is a comprehensive collection of web development projects, tutorials, and resources designed to take you from beginner to advanced level. Whether you're just starting out or looking to sharpen your skills, this journey has something for everyone! 🌟
+Welcome to **MERN Stack 2.0**! This repository documents my learning journey through Hitesh Chaudhary's comprehensive MERN Stack course on Udemy. It's a collection of projects, code examples, and personal notes designed to help master full-stack development using MongoDB, Express.js, React, and Node.js. 🌟
+
+### 👨‍🏫 About the Instructor
+
+**Hitesh Chaudhary** is a renowned educator and developer known for making complex concepts simple and accessible. His teaching style focuses on practical, real-world applications and industry best practices.
 
 ### 💡 What You'll Find Here
 
-- ✨ **Frontend Projects** - HTML, CSS, JavaScript, React, and more
-- 🎨 **Responsive Designs** - Mobile-first, adaptive layouts
-- ⚡ **Modern Frameworks** - React, Vue, Angular implementations
-- 🔧 **Backend Development** - Node.js, Express, APIs
-- 🗄️ **Database Integration** - MongoDB, SQL, and more
-- 🚀 **Deployment Guides** - Host your projects online
-- 📖 **Learning Resources** - Tutorials, cheatsheets, and best practices
+- ✨ **MongoDB Projects** - Database design, queries, and aggregations
+- 🎨 **Express.js APIs** - RESTful services and middleware
+- ⚡ **React Applications** - Modern UI with hooks and state management
+- 🔧 **Node.js Backend** - Server-side JavaScript and async operations
+- 🗄️ **Full-Stack Projects** - Complete MERN applications
+- 🚀 **Deployment Guides** - Deploy to production environments
+- 📖 **Course Notes** - Key concepts and best practices
+- 🎯 **Code Challenges** - Practice exercises and solutions
+
+</div>
 
 ---
+
+<div style="background: linear-gradient(135deg, #764ba208 0%, #f093fb08 100%); padding: 30px; border-radius: 15px; margin: 20px 0;">
 
 ## 🛠️ Technologies & Tools
 
@@ -73,7 +108,11 @@ Welcome to **Web Dev Journey 2.0**! This repository is a comprehensive collectio
 
 </div>
 
+</div>
+
 ---
+
+<div style="background: linear-gradient(135deg, #667eea08 0%, #764ba208 100%); padding: 30px; border-radius: 15px; margin: 20px 0;">
 
 ## 🗂️ Repository Structure
 
@@ -87,7 +126,11 @@ Web-Dev-Journey-2.0/
 └── 📄 README.md          # You are here!
 ```
 
+</div>
+
 ---
+
+<div style="background: linear-gradient(135deg, #f093fb08 0%, #667eea08 100%); padding: 30px; border-radius: 15px; margin: 20px 0;">
 
 ## 🚀 Getting Started
 
@@ -123,7 +166,11 @@ Before you begin, ensure you have the following installed:
 4. **Start exploring!** 🎉
    Open any project folder and launch the `index.html` file in your browser.
 
+</div>
+
 ---
+
+<div style="background: linear-gradient(135deg, #764ba208 0%, #667eea08 100%); padding: 30px; border-radius: 15px; margin: 20px 0;">
 
 ## 📖 Learning Path
 
@@ -160,7 +207,11 @@ Before you begin, ensure you have the following installed:
 
 </details>
 
+</div>
+
 ---
+
+<div style="background: linear-gradient(135deg, #667eea08 0%, #f093fb08 100%); padding: 30px; border-radius: 15px; margin: 20px 0;">
 
 ## 🤝 Contributing
 
@@ -171,6 +222,8 @@ Contributions are what make the open-source community such an amazing place to l
 3. ✍️ Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. 📤 Push to the Branch (`git push origin feature/AmazingFeature`)
 5. 🔃 Open a Pull Request
+
+</div>
 
 ---
 
@@ -188,13 +241,17 @@ Project Link: [https://github.com/nikhilxagr/Web-Dev-Journey-2.0](https://github
 
 ---
 
+<div style="background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%); padding: 25px; border-radius: 15px; margin: 20px 0;">
+
 ## 🌟 Show Your Support
 
 If you find this repository helpful, please give it a ⭐️! It helps others discover this project and motivates me to keep improving it.
 
+</div>
+
 ---
 
-<div align="center">
+<div align="center" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); padding: 40px; border-radius: 20px; margin: 20px 0; color: white;">
 
 ### 🚀 Happy Coding!
 
