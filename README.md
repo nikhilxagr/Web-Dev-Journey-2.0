@@ -1,61 +1,23 @@
 <div align="center">
 
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 15px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); margin: 20px 0;">
+  <h2 style="color: white; margin: 0;">🚀 Web Dev Journey</h2>
+  <h3 style="color: #f0f0f0; margin: 10px 0;">Full Stack Development Journey</h3>
+</div>
 
-<svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); border-radius: 15px; padding: 20px; box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);">
-  <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1">
-        <animate attributeName="stop-color" values="#ffffff;#fff9e6;#ffe6f0;#ffffff" dur="5s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" style="stop-color:#fff9e6;stop-opacity:1">
-        <animate attributeName="stop-color" values="#fff9e6;#ffe6f0;#ffffff;#fff9e6" dur="5s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" style="stop-color:#ffe6f0;stop-opacity:1">
-        <animate attributeName="stop-color" values="#ffe6f0;#ffffff;#fff9e6;#ffe6f0" dur="5s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
-    </filter>
-  </defs>
-  <text x="50%" y="40%" text-anchor="middle" font-size="56" font-weight="bold" fill="url(#gradient)" font-family="Arial, sans-serif" filter="url(#glow) url(#shadow)">
-    🚀 Web Dev Journey
-  </text>
-  <text x="50%" y="65%" text-anchor="middle" font-size="20" fill="#ffffff" font-family="Arial, sans-serif" opacity="0.95" font-weight="500">
-    Full Stack Development Journey
-  </text>
-</svg>
-
-<br/>
-
-<div style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); padding: 25px; border-radius: 15px; margin: 20px 0; border: 2px solid #667eea30; backdrop-filter: blur(10px);">
+---
 
 ### 🎓 Course by **Hitesh Chaudhary** | 📚 Source: **Udemy**
 
-<p align="center">
-  <em style="color: #667eea; font-size: 16px;">Your complete guide to mastering the MERN Stack with hands-on projects and real-world applications</em>
-</p>
+_Your complete guide to mastering the MERN Stack with hands-on projects and real-world applications_
 
-</div>
-
-<br/>
-
-<br/>
+---
 
 > 💡 **Learning from the best!** This repository contains code, notes, and projects from Hitesh Chaudhary's MERN Stack course on Udemy.
 
 </div>
 
 ---
-
-<div style="background: linear-gradient(135deg, #667eea08 0%, #764ba208 100%); padding: 30px; border-radius: 15px; margin: 20px 0;">
 
 ## 📚 About This Repository
 
@@ -76,11 +38,7 @@ Welcome to **MERN Stack 2.0**! This repository documents my learning journey thr
 - 📖 **Course Notes** - Key concepts and best practices
 - 🎯 **Code Challenges** - Practice exercises and solutions
 
-</div>
-
 ---
-
-<div style="background: linear-gradient(135deg, #764ba208 0%, #f093fb08 100%); padding: 30px; border-radius: 15px; margin: 20px 0;">
 
 ## 🛠️ Technologies & Tools
 
@@ -108,11 +66,7 @@ Welcome to **MERN Stack 2.0**! This repository documents my learning journey thr
 
 </div>
 
-</div>
-
 ---
-
-<div style="background: linear-gradient(135deg, #667eea08 0%, #764ba208 100%); padding: 30px; border-radius: 15px; margin: 20px 0;">
 
 ## 🗂️ Repository Structure
 
@@ -126,11 +80,7 @@ Web-Dev-Journey-2.0/
 └── 📄 README.md          # You are here!
 ```
 
-</div>
-
 ---
-
-<div style="background: linear-gradient(135deg, #f093fb08 0%, #667eea08 100%); padding: 30px; border-radius: 15px; margin: 20px 0;">
 
 ## 🚀 Getting Started
 
@@ -164,13 +114,8 @@ Before you begin, ensure you have the following installed:
    ```
 
 4. **Start exploring!** 🎉
-   Open any project folder and launch the `index.html` file in your browser.
-
-</div>
 
 ---
-
-<div style="background: linear-gradient(135deg, #764ba208 0%, #667eea08 100%); padding: 30px; border-radius: 15px; margin: 20px 0;">
 
 ## 📖 Learning Path
 
@@ -207,11 +152,7 @@ Before you begin, ensure you have the following installed:
 
 </details>
 
-</div>
-
 ---
-
-<div style="background: linear-gradient(135deg, #667eea08 0%, #f093fb08 100%); padding: 30px; border-radius: 15px; margin: 20px 0;">
 
 ## 🤝 Contributing
 
@@ -222,8 +163,6 @@ Contributions are what make the open-source community such an amazing place to l
 3. ✍️ Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. 📤 Push to the Branch (`git push origin feature/AmazingFeature`)
 5. 🔃 Open a Pull Request
-
-</div>
 
 ---
 
@@ -241,17 +180,13 @@ Project Link: [https://github.com/nikhilxagr/Web-Dev-Journey-2.0](https://github
 
 ---
 
-<div style="background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%); padding: 25px; border-radius: 15px; margin: 20px 0;">
-
 ## 🌟 Show Your Support
 
 If you find this repository helpful, please give it a ⭐️! It helps others discover this project and motivates me to keep improving it.
 
-</div>
-
 ---
 
-<div align="center" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); padding: 40px; border-radius: 20px; margin: 20px 0; color: white;">
+<div align="center">
 
 ### 🚀 Happy Coding!
 
