@@ -21,3 +21,4 @@ function makeTea(typeofTea){
 
 let tea1 = makeTea("green tea");
 console.log(tea1);
+
