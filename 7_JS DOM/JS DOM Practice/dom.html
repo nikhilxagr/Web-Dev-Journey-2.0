@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .container {
+            margin: 20px 0;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-heading">DOM Manipulation Practice</h1>
+
+    <div class="container">
+        <h2>Text Manipulation</h2>
+        <p id="demo-text">This is a demo paragraph.</p>
+        <button id="change-text-btn">Change Text</button>
+        <button id="toggle-highlight-btn">Toggle Highlight</button>
+    </div>
+
+    <div class="container">
+        <h2>Element Creation</h2>
+        <button id="add-item-btn">Add List Item</button>
+        <ul id="item-list"></ul>
+    </div>
+
+    <div class="container">
+        <h2>Input Handling</h2>
+        <input type="text" id="user-input" placeholder="Enter your name">
+        <button id="greet-btn">Greet Me</button>
+        <p id="greeting"></p>
+    </div>
+
+    <div class="container">
+        <h2>Visibility Toggle</h2>
+        <button id="toggle-content-btn">Toggle Content</button>
+        <div id="toggle-content">
+            <p>This content can be shown or hidden!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Dynamic Styling</h2>
+        <button id="change-color-btn">Change Color</button>
+        <div id="color-box" style="width: 200px; height: 100px; background-color: lightblue; margin: 10px 0;"></div>
+    </div>
+
+    <div class="container">
+        <h2>Form Handling</h2>
+        <form id="user-form">
+            <div>
+                <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+            <div>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div>
+                <input type="number" id="age" placeholder="Age" min="1" max="120">
+            </div>
+            <div>
+                <select id="country">
+                    <option value="">Select Country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="India">India</option>
+                    <option value="Canada">Canada</option>
+                </select>
+            </div>
+            <button type="submit">Submit Form</button>
+            <button type="reset">Reset Form</button>
+        </form>
+        <div id="form-output" style="margin-top: 15px; padding: 10px; background-color: #f0f0f0; display: none;">
+            <h3>Form Data:</h3>
+            <p id="output-content"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
