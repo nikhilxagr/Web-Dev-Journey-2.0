@@ -12,5 +12,12 @@ function* numberGenerator() {
 }
 
 let gen = numberGenerator();
-console.log(gen());
+let genTwo = numberGenerator();
 
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+
+console.log(genTwo.next().value);
+console.log(genTwo.next().value);
