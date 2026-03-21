@@ -4,6 +4,14 @@ const app = express();
 
 // Basic Middleware for configuration of the app
 
+app.use((req, res, next) => {
+  const [path, query] = req.url.split("?");
+  const normalizedPath = path.replace(/\/{2,}/g, "/");
+
+  req.url = query ? `${normalizedPath}?${query}` : normalizedPath;
+  next();
+});
+
 app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
