@@ -1,43 +1,38 @@
 import Mailgen from "mailgen";
 import nodemailer from "nodemailer";
-import Mail from "nodemailer/lib/mailer";
 
-const sendEmail = async (to, subject, html) => {
-    const mailGenerator = new Mailgen({
-        theme: "default",
-        product: {
-            name: "Project Management App",
-            link: "https://project-management-app.com",
-        },
-    });
+const sendEmail = async ({ email, subject, mailgenContent }) => {
+  const mailGenerator = new Mailgen({
+    theme: "default",
+    product: {
+      name: "Project Management App",
+      link: "https://project-management-app.com",
+    },
+  });
 
-    const emailTextual = mailGenerator.generatePlaintext(Options.mailgenContent);
+  const emailTextual = mailGenerator.generatePlaintext(mailgenContent);
+  const emailHtml = mailGenerator.generate(mailgenContent);
 
-    const emailHtml = mailGenerator.generate(Options.mailgenContent);
+  const transporter = nodemailer.createTransport({
+    host: process.env.MAILTRAP_SMTP_HOST,
+    port: Number(process.env.MAILTRAP_SMTP_PORT),
+    auth: {
+      user: process.env.MAILTRAP_SMTP_USER,
+      pass: process.env.MAILTRAP_SMTP_PASS,
+    },
+  });
 
-    const transporter = nodemailer.createTransport({
-        host: process.env.MAILTRAP_SMTP_HOST,
-        port: process.env.MAILTRAP_SMTP_PORT,
-        auth: {
-            user: process.env.MAILTRAP_SMTP_USER,
-            pass: process.env.MAILTRAP_SMTP_PASS
-        }
-});
+  const mail = {
+    from: "mail.task@project-management-app.com",
+    to: email,
+    subject,
+    text: emailTextual,
+    html: emailHtml,
+  };
 
-    const mail = {
-        from:"mail.task@project-management-app.com",
-        to:options.email,
-        subject: options.subject,
-        text: emailTextual,
-        html: emailHtml,
-    }
-
-    try {
-        await transporter.sendMail(mail);
-        console.log("Email sent successfully");
-    } catch (error) {
-        console.error("Error sending email:", error);
-    }
+  const info = await transporter.sendMail(mail);
+  console.log("Email sent successfully");
+  return info;
 };
 
 const emailVerificationMailgenContent = (username, verificationUrl) => {
@@ -81,4 +76,8 @@ const forgotPasswordMailgenContent = (username, resetUrl) => {
   };
 };
 
-export { emailVerificationMailgenContent, forgotPasswordMailgenContent, sendEmail };
+export {
+  emailVerificationMailgenContent,
+  forgotPasswordMailgenContent,
+  sendEmail,
+};
