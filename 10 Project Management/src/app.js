@@ -1,5 +1,7 @@
 import express from "express";
 import cors from "cors";
+import cookieParser from "cookie-parser";
+
 const app = express();
 
 // Basic Middleware for configuration of the app
@@ -15,6 +17,7 @@ app.use((req, res, next) => {
 app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
+app.use(cookieParser());
 
 // Cors confqiguration
 app.use(
@@ -31,11 +34,20 @@ import healthCheckRoutes from "./routes/healthcheck.routes.js";
 import authRouter from "./routes/auth.routes.js";
 
 app.use("/api/v1/healthcheck", healthCheckRoutes);
-
 app.use("/api/v1/auth", authRouter);
 
 app.get("/", (req, res) => {
   res.send("Welcome to the Project Management API");
+});
+
+app.use((err, req, res, next) => {
+  const statusCode = err.statusCode || 500;
+
+  return res.status(statusCode).json({
+    success: false,
+    message: err.message || "Internal Server Error",
+    errors: err.errors || [],
+  });
 });
 
 export default app;
