@@ -6,11 +6,18 @@ import {
   userRegisterValidation,
 } from "../validaters/index.js";
 
+import { validate } from "../middlewares/validator.middleware.js";
+
+import { verifyJWT } from "../middlewares/auth.middleware.js";
+
 const router = Router();
 
 router
   .route("/register")
   .post(userRegisterValidation(), validate, registerUser);
 router.route("/login").post(userLoginValidation(), validate, login);
+
+// Secure route for logout, requires valid JWT token
+router.route("/logout").post(verifyJWT, userLoginValidation(), validate, login);
 
 export default router;

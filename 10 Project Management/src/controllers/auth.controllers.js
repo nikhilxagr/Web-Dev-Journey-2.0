@@ -136,4 +136,27 @@ const login = asyncHandler(async (req, res) => {
     );
 });
 
-export { generateAccessAndRefreshToken, registerUser, login };
+const logoutUser = asyncHandler(async (req, res) => {
+  await User.findByIdAndUpdate(req.user._id,
+     { 
+      $set: { refreshToken: null
+
+       } 
+      },
+      { new: true, runValidators: false });
+    });
+    const options = {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "strict",
+      maxAge: 0, // Expire immediately
+    };
+
+    return res
+      .status(200)
+      .cookie("refreshToken", "", options)
+      .cookie("accessToken", "", options)
+      .json(new ApiResponse(200, null, "Logout successful"));
+
+
+export { generateAccessAndRefreshToken, registerUser, login, logoutUser };
